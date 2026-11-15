@@ -1,7 +1,25 @@
 [gd_scene format=3 uid="uid://cqow47bch5ocs"]
 
+[ext_resource type="Texture2D" uid="uid://b2p13e7f4d506" path="res://Assets/mockover-perspective.png" id="1_0xm2m"]
 [ext_resource type="PackedScene" uid="uid://ckudr8chj1kgo" path="res://player.tscn" id="1_ig7tw"]
 
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_oybhc"]
+size = Vector2(1174, 46.5)
+
 [node name="Main" type="Node2D" unique_id=2122074184]
+
+[node name="StaticBody2D" type="StaticBody2D" parent="." unique_id=998597567]
+
+[node name="MockoverPerspective2" type="Sprite2D" parent="StaticBody2D" unique_id=1520028789]
+position = Vector2(684, 1)
+texture = ExtResource("1_0xm2m")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D" unique_id=958800390]
+position = Vector2(311, 165.25)
+shape = SubResource("RectangleShape2D_oybhc")
+
+[node name="MockoverPerspective" type="Sprite2D" parent="StaticBody2D" unique_id=1075281869]
+position = Vector2(100, 3)
+texture = ExtResource("1_0xm2m")
 
 [node name="Player" parent="." unique_id=1755580060 instance=ExtResource("1_ig7tw")]
