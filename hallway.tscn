@@ -1,0 +1,23 @@
+[gd_scene format=3 uid="uid://brwontdkqu28u"]
+
+[ext_resource type="Texture2D" uid="uid://b2p13e7f4d506" path="res://Assets/mockover-perspective.png" id="1_ue1jw"]
+[ext_resource type="PackedScene" uid="uid://ckudr8chj1kgo" path="res://player.tscn" id="2_eacex"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_eacex"]
+size = Vector2(1174, 50.779785)
+
+[node name="hallway" type="Node2D" unique_id=1500403577]
+
+[node name="StaticBody2D" type="StaticBody2D" parent="." unique_id=2033286921]
+
+[node name="MockoverPerspective2" type="Sprite2D" parent="StaticBody2D" unique_id=1305466390]
+position = Vector2(684, 1)
+texture = ExtResource("1_ue1jw")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D" unique_id=168374198]
+position = Vector2(655, 147.00002)
+scale = Vector2(1.2232572, 1.0452312)
+shape = SubResource("RectangleShape2D_eacex")
+
+[node name="Player" parent="StaticBody2D" unique_id=1755580060 instance=ExtResource("2_eacex")]
+position = Vector2(376, -26)

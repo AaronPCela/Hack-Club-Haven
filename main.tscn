@@ -2,11 +2,22 @@
 
 [ext_resource type="Texture2D" uid="uid://b2p13e7f4d506" path="res://Assets/mockover-perspective.png" id="1_0xm2m"]
 [ext_resource type="PackedScene" uid="uid://ckudr8chj1kgo" path="res://player.tscn" id="1_ig7tw"]
+[ext_resource type="Script" uid="uid://enwhcwhyqall" path="res://doors.gd" id="2_h2yge"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_oybhc"]
-size = Vector2(1174, 46.5)
+size = Vector2(1174, 50.779785)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_cae1x"]
+size = Vector2(223.89322, 379.7694)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_ti3vy"]
+size = Vector2(104, 594.5)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_wtuol"]
+size = Vector2(84, 518)
 
 [node name="Main" type="Node2D" unique_id=2122074184]
+metadata/_edit_vertical_guides_ = [-19803.0]
 
 [node name="StaticBody2D" type="StaticBody2D" parent="." unique_id=998597567]
 
@@ -16,10 +27,33 @@ texture = ExtResource("1_0xm2m")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D" unique_id=958800390]
 position = Vector2(311, 165.25)
+scale = Vector2(1.2232572, 1.0452312)
 shape = SubResource("RectangleShape2D_oybhc")
+
+[node name="doors" type="Area2D" parent="StaticBody2D" unique_id=1214309451]
+position = Vector2(311, 165.25)
+scale = Vector2(1.2232572, 1.0452312)
+script = ExtResource("2_h2yge")
+next_scene_path = "uid://brwontdkqu28u"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D/doors" unique_id=1275420302]
+position = Vector2(358.87793, -187.75749)
+scale = Vector2(0.8318379, 0.9006698)
+shape = SubResource("RectangleShape2D_cae1x")
 
 [node name="MockoverPerspective" type="Sprite2D" parent="StaticBody2D" unique_id=1075281869]
 position = Vector2(100, 3)
 texture = ExtResource("1_0xm2m")
 
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="StaticBody2D" unique_id=268622975]
+position = Vector2(-317, -161.75)
+shape = SubResource("RectangleShape2D_ti3vy")
+
+[node name="CollisionShape2D3" type="CollisionShape2D" parent="StaticBody2D" unique_id=982198764]
+position = Vector2(938, -114)
+shape = SubResource("RectangleShape2D_wtuol")
+
 [node name="Player" parent="." unique_id=1755580060 instance=ExtResource("1_ig7tw")]
+position = Vector2(17, -234)
+
+[connection signal="body_entered" from="StaticBody2D/doors" to="StaticBody2D/doors" method="_on_body_entered"]

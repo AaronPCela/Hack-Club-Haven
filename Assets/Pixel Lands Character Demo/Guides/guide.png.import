@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://c031k813ght2v"
-path="res://.godot/imported/guide.png-956dd0f63e694e274572cc4a32aa464f.ctex"
+path="res://.godot/imported/guide.png-aab32589accd1d4bae84d456c84a5a08.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/Animation/Pixel Lands Character Demo/Guides/guide.png"
-dest_files=["res://.godot/imported/guide.png-956dd0f63e694e274572cc4a32aa464f.ctex"]
+source_file="res://Assets/Pixel Lands Character Demo/Guides/guide.png"
+dest_files=["res://.godot/imported/guide.png-aab32589accd1d4bae84d456c84a5a08.ctex"]
 
 [params]
 

@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://bwjxcwrgmycqr"
-path="res://.godot/imported/Tops_long_sleeve_red.png-2bcb481e5246536f2461157f64354403.ctex"
+path="res://.godot/imported/Tops_long_sleeve_red.png-246195e6018a039cbe7ca7c1e788f71c.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/Animation/Pixel Lands Character Demo/4_Tops/Tops_long_sleeve_red.png"
-dest_files=["res://.godot/imported/Tops_long_sleeve_red.png-2bcb481e5246536f2461157f64354403.ctex"]
+source_file="res://Assets/Pixel Lands Character Demo/4_Tops/Tops_long_sleeve_red.png"
+dest_files=["res://.godot/imported/Tops_long_sleeve_red.png-246195e6018a039cbe7ca7c1e788f71c.ctex"]
 
 [params]
 

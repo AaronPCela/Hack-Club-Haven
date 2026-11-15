@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://bsc3qmftvrxlt"
-path="res://.godot/imported/Tools_Under_basic.png-cfb05f98ad9494f5d573483094589fa1.ctex"
+path="res://.godot/imported/Tools_Under_basic.png-76b1212f6480c01d3fa81d2f54dd30c9.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/Animation/Pixel Lands Character Demo/8_Tools_Under/Tools_Under_basic.png"
-dest_files=["res://.godot/imported/Tools_Under_basic.png-cfb05f98ad9494f5d573483094589fa1.ctex"]
+source_file="res://Assets/Pixel Lands Character Demo/8_Tools_Under/Tools_Under_basic.png"
+dest_files=["res://.godot/imported/Tools_Under_basic.png-76b1212f6480c01d3fa81d2f54dd30c9.ctex"]
 
 [params]
 

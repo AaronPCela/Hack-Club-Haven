@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://b4fsdnp2ismi3"
-path="res://.godot/imported/shadow.png-ec4c26c580c0756132df20fed9575500.ctex"
+path="res://.godot/imported/shadow.png-21dc7fadad80c6c8da3c8e0515c4f7e0.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/Animation/Pixel Lands Character Demo/shadow.png"
-dest_files=["res://.godot/imported/shadow.png-ec4c26c580c0756132df20fed9575500.ctex"]
+source_file="res://Assets/Pixel Lands Character Demo/shadow.png"
+dest_files=["res://.godot/imported/shadow.png-21dc7fadad80c6c8da3c8e0515c4f7e0.ctex"]
 
 [params]
 

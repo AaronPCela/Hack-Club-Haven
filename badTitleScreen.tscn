@@ -1,0 +1,79 @@
+[gd_scene format=3 uid="uid://dm1klci1phdu6"]
+
+[ext_resource type="Script" uid="uid://be8hb350857uh" path="res://menu_button.gd" id="1_fekwf"]
+[ext_resource type="Texture2D" uid="uid://f83e6cfmyubp" path="res://Assets/Very True Final Logo.png" id="1_wocow"]
+[ext_resource type="Texture2D" uid="uid://b8wqh27i2cgyq" path="res://Assets/Untitled.png" id="3_fekwf"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_uxal0"]
+corner_radius_top_left = 10
+corner_radius_top_right = 10
+corner_radius_bottom_right = 10
+corner_radius_bottom_left = 10
+corner_detail = 20
+
+[node name="Node2D" type="Node2D" unique_id=1877625831]
+scale = Vector2(9.174347, 10.145598)
+metadata/_edit_vertical_guides_ = [-30.0]
+
+[node name="Camera2D" type="Camera2D" parent="." unique_id=841360291]
+position = Vector2(-62, -21)
+scale = Vector2(-0.05301136, 0.011736981)
+
+[node name="Control" type="Control" parent="." unique_id=396501744]
+layout_mode = 3
+anchors_preset = 0
+offset_left = -305.0
+offset_top = -140.0
+offset_right = 191.0
+offset_bottom = 156.0
+
+[node name="Button" type="Button" parent="Control" unique_id=389171822]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.49
+anchor_top = 0.42600003
+anchor_right = 0.49
+anchor_bottom = 0.42600003
+offset_left = -10.039993
+offset_top = -5.0960083
+offset_right = -2.0399933
+offset_bottom = 2.9039917
+scale = Vector2(3.1551645, 1.8605754)
+
+[node name="MenuButton" type="MenuButton" parent="Control/Button" unique_id=273108797]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.563
+anchor_top = 0.282
+anchor_right = 0.563
+anchor_bottom = 0.282
+offset_left = -6.0887036
+offset_top = -2.793468
+offset_right = 104.9113
+offset_bottom = 51.20653
+scale = Vector2(0.10864514, 0.17095244)
+text = "Start
+Walking"
+script = ExtResource("1_fekwf")
+
+[node name="PanelContainer" type="PanelContainer" parent="." unique_id=1635724594]
+clip_children = 1
+offset_left = -78.0
+offset_top = -45.999996
+offset_right = -38.0
+offset_bottom = -5.999996
+scale = Vector2(0.94792014, 0.6130373)
+theme_override_styles/panel = SubResource("StyleBoxFlat_uxal0")
+
+[node name="TextureRect" type="TextureRect" parent="PanelContainer" unique_id=1051479026]
+layout_mode = 2
+texture = ExtResource("1_wocow")
+expand_mode = 1
+
+[node name="Screenshot20261115135935" type="Sprite2D" parent="." unique_id=1981831080]
+z_index = -1
+position = Vector2(-62, -25)
+scale = Vector2(0.15183091, 0.124559514)
+texture = ExtResource("3_fekwf")
+
+[connection signal="pressed" from="Control/Button/MenuButton" to="Control/Button/MenuButton" method="_on_pressed"]

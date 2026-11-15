@@ -3,12 +3,16 @@ extends CharacterBody2D
 @onready var sprite = $Sprite2D
 
 const SPEED = 400
+const RUN_SPEED = 700
 
 
 func _physics_process(delta) -> void:
 	# Add the gravity.
 	if not is_on_floor():
 		velocity += get_gravity() * delta
+		
+	# Determine the active speed based on whether Shift is held.
+	var SPEED = RUN_SPEED if Input.is_key_pressed(KEY_SHIFT) else SPEED
 		
 	# Get the input direction and handle the movement/deceleration.
 	# As good practice, you should replace UI actions with custom gameplay actions.
@@ -29,3 +33,4 @@ func _process(delta):
 		sprite.flip_h = true  # Face left
 	elif direction > 0:
 		sprite.flip_h = false # Face right
+		
